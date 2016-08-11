@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  
+	 #map {
+        width: 90%;
+        height: 400px;
+        background-color: grey;
+      }
+	
+  button {
+  width:200px;
+  height: 200px;
+  position:absolute;
+  border-radius: 200px;
+  background-image: url("http://img.wallpaperlist.com/uploads/wallpaper/files/sim/simple-gradient-blue-wallpaper-532acdbf2dec9.jpg"); 
+  background-size: 90%;}
+  
+ .circle {
+	border-radius: 40%;
+	width: 300px;
+	height: 300px; 
+	/* width and height can be anything, as long as they're equal */
+}
+  body {
+      font: 33px Tahoma, sans-serif;
+      line-height: 1.8;
+	  font-weight: bold;
+      color: #f5f6f7;
+  }
+  p {font-size: 20px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 15px;
+      padding-bottom: 170px;
+  }
+  .navbar {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }  
+  
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+     
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ <button type="button" onclick="window.location.href='C:/Users/Girls Who Code/Documents/GWC Final Project/resources.html'" style="top:11%;left:21%;">Resources</button>
+ <button type="button" onclick="alert('Hello world!')" style="top:11%;left:64%;background-image:url('http://brandthunder.com/wp/wp-content/uploads/2011/11/Windows-Desktop-Background.jpg')">Donations</button>
+ <button type="button" onclick="alert('Hello world!')" style="top:67%;left:42%;background-image:url('http://www.represent.de/img/background.jpg')">Getting Involved</button>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin"></h3>
+  <img src="http://www.solidbackgrounds.com/images/1280x720/1280x720-teal-deer-solid-color-background.jpg" class="img-circle margin" style="display:inline" alt="Bird" width="415" height="415">
+  <h3></h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">What Am I?</h3>
+  <p> Hola a todos, nosotras somos un equipo de muxers que esta trabajando juntas para  </p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">APIs will go here, the maps do different locations</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p> Will be putting maps here </p>
+      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p> From your location.</p>
+      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p> The shelter closest to you as well as information about it.</p>
+      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+	    <div id="map"></div>
+	<script>
+		function initMap() {
+			var mapDiv = document.getElementById('map');
+			var map = new google.maps.Map(mapDiv, {
+				center: {lat:47.579956, lng: -122.312313},
+				zoom: 8
+			});
+			
+			var marker = new google.maps.Marker ({
+				position: {lat:47.579956, lng: -122.312313},
+				map: map,
+				title: 'hola'
+			});
+		}
+	
+	</script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAZmLM9MkDZs-1U0mTciSsuyec3GKH2llo&callback=initMap"
+		async defer>
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Bootstrap Theme Made By <a href="http://www.w3schools.com">www.w3schools.com</a></p> 
+</footer>
+
+</body>
+</html>
