@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mission to help WOMEN!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */
+    .navbar {
+      margin-bottom: 30px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */
+     .jumbotron {
+	  background: url('https://themeltingpotmh.files.wordpress.com/2015/03/women-empowerment.jpg') no-repeat;
+	  background-size: 100% 100%;
+	  height: 400px;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+	
+  </style>
+	
+</head>
+<body>
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Mission to help women.</h1>
+    <p>Mission, Vision & Varieties</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="#"><a href="#">Home</a></li>
+        <li><a href="resources.html">Resourses</a></li>
+        <li><a href="donations.html">Donations</a></li>
+        <li><a href="#">Getting Involved</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Elizabeth Gregory Home</div>
+        <div class="panel-body"><img src="http://www.ucarecdn.com/e74fc111-b97b-45f5-8dd0-4f6778236b63/-/preview/300x300/" class="img-responsive" style="width:70%" alt="Image"></div>
+        <div class="panel-footer">Elizabeth Gregory Home (EGH) serves single homeless women in the greater Seattle area by providing transitional housing, a day center and case management services. Elizabeth Gregory Home provides a welcoming and respectful refuge where homeless and at-risk women have access to compassionate care. </div>
+     <a class="w3-btn" href="http://www.eghseattle.org/about-us/mission/">More Information</a>
+	 </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">The Sophia Way</div>
+        <div class="panel-body"><img src="https://d36ff89f97eddeaee95d-4a6d7498c2822f0d4f092500bd8afae4.ssl.cf1.rackcdn.com/Logos/client_id_62949_logo_1459879843.8111.png"class="img-responsive" style="width:70%" alt="Image"></div>
+        <div class="panel-footer"></div>The mission of The Sophia Way is to help end homelessness for adult women in King County by providing shelter, life skills training, social services and supportive permanent housing, offering a path from homelessness to stable independent living.
+	  <a class="w3-btn" href="http://sophiaway.org/we-care/">More Information</a>
+	  </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Catholic Community Services of Western Washington</div>
+        <div class="panel-body"><img src="http://www.louisianadrugcard.com/images/partners/catholic-community-services.jpg"class="img-responsive" style="width:70%" alt="Image"></div>
+        <div class="panel-footer">Noel House Programs provides safe, comfortable shelter to a diverse community of homeless women, particularly those most vulnerable. We strive to create an environment of dignity, respect and compassion. We recognize the intrinsic value of each person and honor her unique experience.</div>>
+<a class="w3-btn" href="http://www.ccsww.org/site/PageServer?pagename=homeless_noelhouse">More Information</a>
+	  </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">YWCA</div>
+        <div class="panel-body"><img src="https://i.vimeocdn.com/portrait/11972135_300x300" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">A safe and welcoming place for homeless women to access meals, laundry, showers, activities and connections to other services</div>
+<a class="w3-btn" href="https://www.ywcaworks.org/page.aspx?pid=434">More Information</a></div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Jubilee Women's Center</div>
+        <div class="panel-body"><img src="http://www.ucarecdn.com/e1083230-2356-4146-ae12-0767092026d3/-/preview/300x300/" class="img-responsive" style="width:70%" alt="Image"></div>
+        <div class="panel-footer">Jubilee Women’s Center supports women experiencing poverty to build stable and fulfilling futures, one extraordinary woman at a time. Led by the guiding principle that all women deserve respect and dignity, Jubilee’s programs and services help women make permanent life changes.</div>
+<a class="w3-btn" href="http://www.jwcenter.org/">More Information</</a>
+	 </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Mary's Place</div>
+        <div class="panel-body"><img src="https://c676142.ssl.cf0.rackcdn.com/user_photo-564103232b24d.png" class="img-responsive" style="width:70%" alt="Image"></div>
+        <div class="panel-f
+  </div>ooter">Our Mission
+
+Empowering homeless women, children and families to reclaim their lives by providing shelter, nourishment, resources, healing and hope in a safe community.
+.</div>
+<a class="w3-btn" href="http://www.marysplaceseattle.org/">More Information</a>
+	 </div>
+    </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p>There are more events available at the getting involved web page.</p>
+</footer>
+
+</body>
+</html>
+

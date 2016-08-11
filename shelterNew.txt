@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      background:url("http://www.homelessshelterdirectory.org/images/pics/7941_1.jpg") no-repeat;
+	  background-size:100%;
+	  height:400px;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>SHELTER FOR HOMELESS!!!</h1>      
+    <p>Childeren,Women & Man</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="#"><a href="#">Home</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Donation</a></li>
+        <li><a href="#">Get Involved</a></li>
+      </ul>
+      </div>
+  </div>
+</nav>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Seattle Homeless Shelters & Services For The Needy</div>
+        <div class="panel-body"><img src="http://www.homelessshelterdirectory.org/images/pics/7941_1.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">This shelter is located in Seattle WA, The shelter is for women, man, and for youth.We also provide other homeless resources such as transitional resources for the homeless. Homeless clinic and treatment center resources are also provided on the right navigational bar.If you want more information click here</div>
+<a class ="w3-btn" href= "http://www.homelessshelterdirectory.org/cgi-bin/id/city.cgi?city=Seattle&state=WA">more information</a>
+	 </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">2,000 homeless men & women look to DESC for help every day</div>
+        <div class="panel-body"><img src="https://irp-cdn.multiscreensite.com/51c40190/dms3rep/multi/desktop/hero-1000x560.dm.crop_0_0_1000_560_YI18.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Today our mission is not merely to offer shelter, but to end the homelessness of our community's most vulnerable people, through an integrated array of clinical services and supportive housing that allows men and women to reclaim their lives and reach their highest potential.</div>
+ <a class = "w3-btn" href= "http://www.desc.org/">more information</a>
+	 </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Shelter for only mand and you can donate a meal!!</div>
+        <div class="panel-body"><img src="http://www.ugm.org/mw/images/19854-home-3.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">We provide emergency care and long-term recovery services to hurting and homeless people in Seattle. We’ll serve, rescue and transform those in need until we’ve solved the root causes of poverty and homelessness.</div>
+ <a class = "w3-btn" href= "http://www.ugm.org/mw/images/19854-home-3.jpg">more information</a>
+	  </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading"> "we believe in compation and respect especially for those who are poor.."</div>
+        <div class="panel-body"><img src="http://www.king5.com/img/resize/content.king5.com/photo/2016/03/31/shelterrally_1459471535321_1312320_ver1.0.JPG?preset=534-401" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Our mission is to provide a hospitable, safe, and orderly shelter for men 50 years of age and older who are homeless. This is to be done in the spirit of ministry of presence, which fosters attention to the individual and respect for each person’s unique situation.</div>
+ <a class = "w3-btn" href= "http://www.ccsww.org/site/PageServer?pagename=homeless_stmartin">more information</a>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Emergency Shelter</div>
+        <div class="panel-body"><img src="https://tribkcpq.files.wordpress.com/2013/01/homelesshselter1.jpeg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Our overnight shelters provide a safe place to sleep each night for menand women experiencing homelessness, and an opportunity to engage withcounselors and access case management resources for employment,</div>
+ <a class = "w3-btn" href="http://www.compasshousingalliance.org/what-we-do-top/emergency-shelter/">more information</a>     
+	  </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">I think of Promise House, I think of a better way of life. I was afraid of what people would think, embarrassed to ask for help</div>
+        <div class="panel-body"><img src="http://medasf.org/redesign/wp-content/uploads/2014/07/Homeless-Blog.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Promise House moves youth in crisis toward safety and success! Our programs cover the vital needs of teens, including emergency shelter, transitional living, pregnant and parenting teen services, individual, group and family counseling, street outreach and educational intervention.</div>
+ <a class = "w3-btn" href = "http://promisehouse.org/">more information</a>     
+	  </div>
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p>For more up coming events go to get involved's web page!</p>  
+  </footer>
+  
+  
+
+
+      </div>
+   
