@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JOB avaialabilities!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  
+   #circle
+	
+	{ 
+	border-radius: 10% 10% 10% 10%
+	width: 36px;
+	height:36px;
+	}
+	
+    #map {
+       width: 100%;
+       height: 400px;
+       background-color: grey;
+      }
+	  
+    /* Remove the navbar's default rounded borders and increase the bottom margin */
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */
+     .jumbotron {
+      background: url('http://jobs.virginia.gov/images/people.jpg') no-repeat;
+   no-repeat;
+   background-size:100%;
+   height: 400px;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+ 
+ .col-sm-4{
+ position:relative;
+ height:500px;
+ width:400px;
+ float:left;
+ } 
+ 
+ img{
+ max-width:100%;
+ height: auto;
+ }
+  </style>
+</head>
+<body>
+
+
+
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Work Work Work...</h1>
+    <p>Mission, Vission & Variaties</p>
+  </div>
+</div>
+
+
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"> <img src="logo.png" id="circle"> </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="finalMainPage.html">Home</a></li>
+        <li><a href="resources.new.html">Resources</a></li>
+        <li><a href="#">Donations</a></li>
+        <li><a href="gettingInvolved.html">Getting Involved</a></li>
+  </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">United Way</div>
+        <div class="panel-body "><img src="http://unitedwaynela.org/media/United_Way_of_NELA_Logo_LIVEUNITED.png"  alt="Image"></div>
+        <div class="panel-footer">
+Being employed can have extremely positive effects on a person struggling on the streets. This boost in confidence – in contrast to the alienating experience of being homeless – is what we’re working toward with Jobs Connect. </div>
+ <a class="w3-btn" href="https://www.uwkc.org/ending-homelessness/jobs-connect/">More Information</a>
+  </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">North Seattle College</div>
+        <div class="panel-body"><img src="http://webshares.northseattle.edu/Marketing/2014_North%20Logo/NSC_left_blk_Print.png"  alt="Image"></div>
+        <div class="panel-footer">The King County Homeless Employment Training & Housing Program assists clients in connecting with housing resources and with job placement assistance,
+,provides assistance with directing clients to appropriate training programs,and one-year retention services to assure stability. </div>
+      <a class="w3-btn"href="https://northseattle.edu/ocee-social-services/king-county-homeless-employment-training-housing-program">More Information</a>
+   </div>
+    </div>
+ <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">Millionare Club Charity</div>
+        <div class="panel-body"><img src="https://www.millionairclub.org/view.image?Id=663" alt="Image"></div>
+        <div class="panel-footer">Our goal is to provide an employment program that develops economic opportunities for men and women while helping them become self-sufficient.</div>
+      <a class="w3-btn" href="https://millionairclub.org/how-we-help">More Information</a>
+   </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">The Zine Project</div>
+        <div class="panel-body"><img src="https://zineprojectseattle.files.wordpress.com/2015/02/cropped-scan00011.jpg" alt="Image"></div>
+        <div class="panel-footer">The Zine Project is a prevocational writing program that takes place at University District Youth Center (UDYC), a Seattle drop-in center for homeless youth. Zine hires five youth (15-22) to take part in an eight week internship where they learn, write, and make art, culminating in the publication of a zine.</div>
+      <a class ="w3-btn" class="w3-btn" href="https://zineprojectseattle.wordpress.com/">More Information</a>
+ </div>
+ </div>
+</div></div><br><br>
+
+<div id="map"></div>
+	<script>
+		function initMap() {
+			var mapDiv = document.getElementById('map');
+			var map = new google.maps.Map(mapDiv, {
+				center: {lat:47.665283, lng:-122.310431},
+				zoom: 8
+			});
+			
+			var shelter1 = new google.maps.Marker ({
+				position: {lat:47.603664, lng:-122.333278},
+				map: map,
+				title: 'hello'
+			});
+			
+			var shelter2 = new google.maps.Marker ({
+				position: {lat:47.699543, lng:-122.332022},
+				map: map,
+				title: 'adios'
+			});
+			
+			var shelter3 = new google.maps.Marker ({
+				position: {lat:47.614057, lng:-122.350239},
+				map: map,
+				title: 'bye'
+			});
+			
+			var shelter4 = new google.maps.Marker ({
+				position: {lat:47.661859, lng:-122.311639},
+				map: map,
+				title: 'luna'
+			});
+		}
+
+	</script>
+		
+<footer class="container-fluid text-center">
+  <p>There are more events available at the getting involved web page.</p>
+</footer>
+
+<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAZmLM9MkDZs-1U0mTciSsuyec3GKH2llo&callback=initMap"
+		async defer>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Get Involved</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="resourcesJS.js"></script>
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+  <script src="database.js"></script>
+  <script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("myImg").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 2000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "http://www.ucarecdn.com/e74fc111-b97b-45f5-8dd0-4f6778236b63/-/preview/300x300/";
+          images[1] = "http://www.louisianadrugcard.com/images/partners/catholic-community-services.jpg";
+          images[2] = "http://www.ugm.org/mw/images/19854-home-3.jpg";
+      </script>
+    
+  <style>
+	#circle
+	
+	{ 
+	border-radius: 10% 10% 10% 10%
+	width: 36px;
+	height:36px;
+	}
+	
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+	
+	
+
+  </style>
+</head>
+<body onload="startTimer()">
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+		 <a class="navbar-brand" href="#"> <img src="logo.png" id="circle"> </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="finalMainPage.html">Home</a></li>
+		<li><a href="resources.new.html">Resources</a></li>
+		<li><a href="donations.html">Donations</a></li>
+        <<li class="active"><a href="#">Getting Involved</a></li>
+      </ul>
+       <!--search bar and account goes here-->
+    </div>
+  </div>
+</nav>
+  
+<div class="container text-center">
+  <div class="row">
+    <div class="col-sm-3 well">
+      <div class="well">
+		<div class="thumbnail">
+        <p>Upcoming Events:</p>
+		
+       <img id="myImg" src="http://medasf.org/redesign/wp-content/uploads/2014/07/Homeless-Blog.jpg"/>
+       <button type="button" onclick="displayPreviousImage()">Previous</button>
+       <button type="button" onclick="displayNextImage()">Next</button>
+   
+        <!--img src="http://images.huffingtonpost.com/2015-11-19-1447968585-1661590-6672156239_89c77d53d8_o.jpg" alt="Paris" width="400" height="300"-->
+        <p><strong>Seattle</strong></p>
+      </div>
+        <!--img src="http://www.planwallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg" class="img-circle" height="65" width="65" alt="Avatar"-->
+      </div>
+      <div class="well">
+        <p><a href="#">Event Types</a></p>
+        <p>
+          <span class="label label-default">resources for women</span>
+          <span class="label label-primary">shelter</span>
+          <span class="label label-success">food</span>
+          <span class="label label-info">job</span>
+		  <span class="label label-info">counseling</span>
+          <span class="label label-warning">gatherings</span>
+          </p>
+      </div>
+      <div class="alert alert-success fade in">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/03/9b/30/26/seattle.jpg" height="100" eidth="200" alt="picSeattle">
+        
+      </div>
+    </div>
+	
+
+
+    <div class="col-sm-7">
+    
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <p style="font-size:200%;" contenteditable="true">Status: events posted by users</p>
+            </div>
+          </div>
+        </div>
+      </div>
+	 
+	  
+	  
+<div id="myevents">
+</div>	  
+	  <p style="font-size:120%;">Enter your event and its description, then hit submit to post it for the public.</p>
+
+
+
+<form id="frm1">
+  Event Name: <input type="text" name="name"><br>
+  Event Description: <input type="text" name="description"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
+

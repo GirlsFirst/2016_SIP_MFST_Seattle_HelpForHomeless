@@ -3,7 +3,7 @@
 <head>
 	
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Simply Me</title>
+  <title>Main Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -23,7 +23,7 @@
   height: 200px;
   position:absolute;
   border-radius: 200px;
-  background-image: url("http://img.wallpaperlist.com/uploads/wallpaper/files/sim/simple-gradient-blue-wallpaper-532acdbf2dec9.jpg"); 
+  background-image: url("https://s-media-cache-ak0.pinimg.com/736x/93/15/af/9315af66a7ca7dc84a537ca8e1c8f05f.jpg"); 
   background-size: 90%;}
   
  .circle {
@@ -36,11 +36,15 @@
       font: 33px Tahoma, sans-serif;
       line-height: 1.8;
 	  font-weight: bold;
-      color: #f5f6f7;
+      //color: #f5f6f7;
+	  background-image: url("http://www.solidbackgrounds.com/images/1920x1080/1920x1080-pastel-blue-solid-color-background.jpg");
+  }
+  .bg-3 {
+	  background-image: url("http://www.solidbackgrounds.com/images/1920x1080/1920x1080-pastel-blue-solid-color-background.jpg");
   }
   p {font-size: 20px;}
   .margin {margin-bottom: 45px;}
-  .bg-1 { 
+  /*.bg-1 { 
       background-color: #1abc9c; /* Green */
       color: #ffffff;
   }
@@ -55,7 +59,7 @@
   .bg-4 { 
       background-color: #2f2f2f; /* Black Gray */
       color: #fff;
-  }
+  }*/
   .container-fluid {
       padding-top: 15px;
       padding-bottom: 170px;
@@ -75,7 +79,7 @@
   
 </style>
 </head>
-<body>
+</body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-default">
@@ -96,71 +100,44 @@
   </div>
 </nav>
 
- <button type="button" onclick="window.location.href='C:/Users/Girls Who Code/Documents/GWC Final Project/resources.html'" style="top:11%;left:21%;">Resources</button>
- <button type="button" onclick="alert('Hello world!')" style="top:11%;left:64%;background-image:url('http://brandthunder.com/wp/wp-content/uploads/2011/11/Windows-Desktop-Background.jpg')">Donations</button>
- <button type="button" onclick="alert('Hello world!')" style="top:67%;left:42%;background-image:url('http://www.represent.de/img/background.jpg')">Getting Involved</button>
+ <button type="button" onclick="window.location.href='gettingInvolved.html'" style="top:9%;left:17%;">Getting Involved</button>
+ <button type="button" onclick="window.location.href='resources.new.html'" style="top:31%;left:74%;">Resources</button>
+ <button type="button" onclick="window.location.href='donations.html'" style="top:57%;left:22%;">Donations</button>
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
   <h3 class="margin"></h3>
-  <img src="http://www.solidbackgrounds.com/images/1280x720/1280x720-teal-deer-solid-color-background.jpg" class="img-circle margin" style="display:inline" alt="Bird" width="415" height="415">
+  <img src="logo.png" class="img-circle margin" style="display:inline" alt="Bird" width="415" height="415">
   <h3></h3>
 </div>
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p> Hola a todos, nosotras somos un equipo de muxers que esta trabajando juntas para  </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
+  <p>Welcome!</p>
 </div>
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">APIs will go here, the maps do different locations</h3><br>
+  <h3 class="margin">Meet Our Admins!</h3><br>
   <div class="row">
-    <div class="col-sm-4">
-      <p> Will be putting maps here </p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    <div class="col-sm-3">
+      <img src="Veronica.png" class="img-responsive margin" style="width:80%" alt="Image">
     </div>
-    <div class="col-sm-4"> 
-      <p> From your location.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    <div class="col-sm-3">
+      <img src="Nancy.png" class="img-responsive margin" style="width:80%" alt="Image">
     </div>
-    <div class="col-sm-4"> 
-      <p> The shelter closest to you as well as information about it.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    <div class="col-sm-3"> 
+      <img src="Solome.png" class="img-responsive margin" style="width:80%" alt="Image">
+    </div>
+	<div class="col-sm-3"> 
+      <img src="Mary.png" class="img-responsive margin" style="width:80%" alt="Image">
     </div>
   </div>
 </div>
 
-	    <div id="map"></div>
-	<script>
-		function initMap() {
-			var mapDiv = document.getElementById('map');
-			var map = new google.maps.Map(mapDiv, {
-				center: {lat:47.579956, lng: -122.312313},
-				zoom: 8
-			});
-			
-			var marker = new google.maps.Marker ({
-				position: {lat:47.579956, lng: -122.312313},
-				map: map,
-				title: 'hola'
-			});
-		}
-	
-	</script>
-	<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAZmLM9MkDZs-1U0mTciSsuyec3GKH2llo&callback=initMap"
-		async defer>
-
-
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-  <p>Bootstrap Theme Made By <a href="http://www.w3schools.com">www.w3schools.com</a></p> 
+  <p>Non Profitted</p> 
 </footer>
-
 </body>
 </html>
